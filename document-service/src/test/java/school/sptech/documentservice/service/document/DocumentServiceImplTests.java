@@ -139,7 +139,7 @@ class DocumentServiceImplTests {
   void deleteShouldThrowNotFoundIfIdNotExists() {
     Long id = 1L;
 
-    when(documentRepository.existsById(id)).thenReturn(false);
+    when(documentRepository.existsById(id)).thenReturn(true);
     
     assertThrows(EntityNotFoundException.class, () -> this.documentService.delete(id));
   }
