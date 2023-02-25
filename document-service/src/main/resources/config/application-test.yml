@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:document-service-db
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  liquibase:
+    enabled: true
