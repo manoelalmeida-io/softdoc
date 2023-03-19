@@ -7,6 +7,8 @@ server:
     include-exception: false
 
 spring:
+  application:
+    name: document-service
   datasource:
     url: ${DATABASE_URL}
     username: ${DATABASE_USER}
