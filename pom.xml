@@ -15,13 +15,14 @@
   <modules>
     <module>document-service</module>
     <module>eureka-service</module>
+    <module>gateway-service</module>
   </modules>
 
   <properties>
     <java.version>17</java.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
-    <spring.boot.version>3.0.3</spring.boot.version>
+    <spring.boot.version>3.0.5</spring.boot.version>
     <spring.cloud-version>2022.0.1</spring.cloud-version>
   </properties>
 
@@ -100,6 +101,7 @@
           <configuration>
             <archive>
               <manifest>
+                <!--suppress UnresolvedMavenProperty -->
                 <mainClass>${start-class}</mainClass>
                 <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
               </manifest>
